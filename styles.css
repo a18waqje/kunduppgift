@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(247, 247, 247);
+    color: rgb(29, 29, 29);
+}
+
+#containerHeader{
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(water.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+}
+#containerHeader nav{
+    border-bottom: 1px solid #6cabfd;
+    padding-bottom: 20px;
+
+}
+
+.container{
+    padding:10px 5%;
+}
+
+.logo{
+   
+    width: 10%;
+    color: rgb(0, 45, 75);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+      
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 19px;
+    background-color: rgb(27, 92, 112);
+    padding: 10px 50px;
+    border-radius: 5px;
+
+    
+}
+
+nav a::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #008cff;
+    transition: 0.5s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 28px;
+    
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 35px;
+}
+.header-text span{
+    color: rgb(0, 45, 75);
+    font-size: 50px;
+    
+}
+hr {
+    margin-bottom: 15vh;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* About Section */
+
+#about{
+    padding: 0;
+    color: #0166a0;
+    margin-bottom: 12vh;
+
+}
+
+
+.col-about-2{
+    flex-basis:70%; /*Flex-basis is used to adjust the width of the column*/
+
+}
+.about-title{
+    font-weight: 500;
+    font-size: 55px;
+   
+}
+.biography{
+    color:rgb(29, 29, 29);
+    font-size: 20px;
+    padding: 10px 5px 10px 0 ;
+}
+
+
+/* CSS for Contact me page starts here*/
+
+.contact-me {
+    padding: 0;
+    color: #0166a0;
+   
+
+}
+
+.contact-me p {
+    padding: 30px 0 50px 0;
+    font-size: 20px;
+    color:#002e49;
+}
+
+.contact-me div {
+    color: #0166a0;
+    background-color: #eaecee;
+    padding: 100px 25px ;
+    width: auto;
+   
+
+}
+.contact-me .btn {
+    background: rgb(0, 45, 75);
+    color: #eaecee;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.contact-me .btn:hover {
+    background: #008cff;
+    color: #eaecee;
+    cursor: pointer;
+
+}
+
+.social-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+
+.social-icon a {
+    
+    text-decoration: none;
+    color: rgb(0, 45, 75);
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    padding-left: 20px;
+    width: auto;
+
+}
+
+.social-icon a i:hover {
+    background: #008cff;
+    color:beige;
+    cursor: pointer;
+    border-radius: 2px;
+     
+}
+
+.copyright {
+    text-align: center;
+    height: 5vh;
+    bottom: 0;
+   
+}
+.copyright p{
+    text-align: center;
+    color:rgb(0, 45, 75);
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 1px solid #6cabfd;
+    padding: 30px;
+  
+}
+nav .fa-solid{
+    display: none;
+}
+/* Resposive website for mobile devices. This section make the website to be used in different devices with resolution less than 600px width*/
+@media only screen and (max-width: 600px){
+    nav .fa-solid {
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: -210px;
+        background-color: #002e49;
+        z-index: 2;
+        width: 210px;
+        height: 100vh;
+        padding-top: 50px;
+        margin-bottom: 5px;
+        transition: right 0.5s;
+        
+    }
+    nav a{
+        color: #eaecee;
+        background: #002e49;
+        
+    }
+    nav ul li {
+        display: block;
+        margin:20px 10px 20px 10px;
+        border-bottom: 1px solid #6cabfd;
+        width:50%;
+    }
+   
+    nav ul .fa-solid{
+        position: absolute;
+        cursor:pointer;
+        top: 8px;
+        left: 14px;
+        color: aliceblue;
+    }
+    .header-text{
+        margin: 30%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 16px;
+        
+    }
+    #containerHeader {
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+    }
+   
+  
+    .col-about-2 {
+        flex-basis: 30%;
+    }
+    .col-about-2 h1{
+        font-size: 30px;
+        padding-top: 10vh;
+        font-weight: bold;
+    }
+    .col-about-2 p {
+        font-size: 16px;
+        padding: 2vh 2px 2vh 0 ;
+    }
+    hr{
+        margin: 30%;
+    }
+    .contact-me h1 {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .contact-me p {
+        font-size: 16px;
+        padding: 5vh 5px 8vh 0;
+    }
+    .contact-me .btn{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .contact-me .social-icon i {
+        font-size: 30px;
+    }
+}
+

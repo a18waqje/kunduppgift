@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/752caced55.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="containerHeader"> <!-- Container contains navagation bars -->
+        <div class="container">
+            <nav>
+                <h2 class="logo">Simsällskap</h2>
+                <ul id="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="index.html" onclick="logout()" id="logout">Logout</a></li>
+                    <i class="fa-solid fa-xmark fa-2x" onclick="menuClose()"></i>
+                </ul>
+                
+                <i class="fa-solid fa-bars fa-2x" onclick="menuOpen()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <h1>Välkommen <span id="userName"><script> document.write(localStorage.getItem("uname"))</script></span><br></h1>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- About section sharts here-->
+    <div id="about"> <!-- Id used for navagation anchor tag when the user clicks the navigation it takes the user to the selected section of the page -->
+        <div class="container">
+           
+                <div class="col-about-2"><!-- classes -->
+                    <h1 class="about-title">About</h1>
+                    <p class="biography">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu fringilla lectus. Cras varius nisi nec suscipit
+                        auctor. Nullam vulputate rutrum neque a auctor. Sed volutpat faucibus orci ac ultricies. Quisque pretium viverra ipsum,
+                        vel suscipit nibh suscipit eget. Vivamus a libero orci. Nulla aliquam vehicula varius. Duis eget orci vel dui feugiat
+                        egestas. Ut vel sem justo.
+                    </p>
+                    <p class="biography">
+                        Integer bibendum magna id convallis gravida. Proin feugiat lacus id elit volutpat porttitor. Nullam ac lectus dignissim,
+                        cursus sem sit amet, tincidunt turpis. Duis sodales enim id mauris facilisis pulvinar. Nunc maximus dolor sed erat
+                        gravida, ac consectetur erat tincidunt. Nam facilisis scelerisque leo non congue. Donec dictum magna laoreet finibus
+                        varius. Sed libero turpis, ultricies ac pharetra rhoncus, tincidunt vitae velit.
+                    </p>
+                    <p class="biography">
+                        Donec convallis luctus nisi, vitae varius quam vulputate quis. Vestibulum suscipit aliquam lacus vel commodo. Aliquam
+                        egestas sollicitudin libero, sed fermentum erat facilisis et. Curabitur tempor quis lectus id venenatis. Morbi nec nulla
+                        dapibus, facilisis elit id, vulputate velit. Praesent interdum odio sit amet nisl faucibus, a egestas dui sagittis.
+                        Fusce felis risus, mattis a commodo ut, laoreet quis justo. Aenean ultricies facilisis nibh, sit amet scelerisque leo
+                        luctus eget.
+                    </p>
+                    <p class="biography">
+                        Ut at volutpat neque. Mauris eget scelerisque eros. Suspendisse ut feugiat arcu. Donec convallis eros nibh, sed bibendum
+                        ante semper eu. Mauris quis euismod ipsum, ac interdum dolor. Aliquam euismod tellus id elementum ullamcorper. Vivamus
+                        in pretium quam. Nullam nunc velit, tempor id convallis at, vehicula eu urna. Ut tristique suscipit sapien vel mollis.
+                        Quisque ornare, sapien sit amet finibus convallis, dolor dui ultricies sem, a tempus magna lectus sed eros. Praesent
+                        lectus magna, scelerisque sit amet finibus sed, consequat placerat eros. Curabitur lectus libero, porttitor et lorem
+                        cursus, tristique facilisis nibh. Nulla fringilla consequat ante id tincidunt.
+                    </p>
+                    <p class="biography">
+                        Donec dolor sem, ornare blandit velit sit amet, tristique rutrum mi. Nam iaculis in metus ac tincidunt. Mauris lacinia
+                        posuere arcu ut porttitor. Phasellus faucibus ac neque sed suscipit. Aenean ultrices odio at odio eleifend sollicitudin.
+                        Quisque sagittis velit vitae ipsum hendrerit venenatis. Duis orci enim, condimentum sed elementum ut, venenatis vitae
+                        mi. Sed ut vehicula massa. Nunc at massa mattis, blandit neque sit amet, faucibus sapien. In lobortis urna tellus, et
+                        tempus enim tempor nec. Maecenas ultrices sollicitudin elementum. Cras a porttitor sem. Etiam sed turpis ut urna
+                        interdum interdum id non lacus. Maecenas risus mi, finibus cursus congue in, fermentum sed enim. Mauris ultricies non
+                        est vel cursus.
+                    </p>
+                    
+                    
+                </div>
+            
+        </div>
+    </div>
+    <hr>
+   
+    <!-- Contact page section starts here -->
+    <div id="contact-me" class="contact-me">
+        <div class="container">
+            <h1 class="about-title">Contact Me</h1>
+            <p>Email us or follow us on social media. </p>
+            <a class="btn" href="mailto:email@example.com">Email Me</a>
+            
+                <div class="social-icon"><!-- External links to the social media platforms-->
+                    <span><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-3x"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram fa-3x"></i></a>
+                    </span>
+                </div>    
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy Simsällskap 2022</p>
+    </div>
+  <script src="scripts.js"></script>  
+</body>
+</html>
