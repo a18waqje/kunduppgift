@@ -114,8 +114,7 @@ hr {
 
 
 .col-about-2{
-    flex-basis:70%; /*Flex-basis is used to adjust the width of the column*/
-
+    flex-basis:70%;
 }
 .about-title{
     font-weight: 500;
@@ -129,7 +128,6 @@ hr {
 }
 
 
-/* CSS for Contact me page starts here*/
 
 .contact-me {
     padding: 0;
@@ -218,7 +216,7 @@ hr {
 nav .fa-solid{
     display: none;
 }
-/* Resposive website for mobile devices. This section make the website to be used in different devices with resolution less than 600px width*/
+
 @media only screen and (max-width: 600px){
     nav .fa-solid {
         display: block;
